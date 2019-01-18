@@ -77,7 +77,7 @@ def L_model_forward(X, parameters,keep_prob):
         
     AL, cache= linear_activation_forward(A, parameters["W"+str(L)], parameters["b"+str(L)], "sigmoid")
     
-    assert AL.shape == (1, X.shape[1])
+
     caches.append(cache)
     return AL, caches, Ds
 
