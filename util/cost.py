@@ -23,11 +23,9 @@ def compute_cost(AL, Y,parameters=None,lambd=None):
         cost -- cross-entropy cost
     """
     m = Y.shape[1]
-    assert not(np.nan in AL)
-    assert not(np.inf in AL)
-    assert not(np.inf in AL*-1)
-    logprobs = np.multiply(-np.log(AL),Y) + np.multiply(-np.log(1 - AL), 1 - Y)
-
+    logprobs = AL * np.multiply(-np.log(AL),Y) + (1 - AL) *np.multiply(-np.log(1 - AL), 1 - Y)
+    logprobs = np.nan_to_num(logprobs)
+    
     cost = 1./m * np.nansum(logprobs)
     
     L2_regularization_cost = 0
