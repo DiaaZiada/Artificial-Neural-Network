@@ -1,3 +1,4 @@
+
 # Artificial Neural Network
 this project allow to make fully connected layers neural network in simple way with optimization and regularization 
 
@@ -38,7 +39,7 @@ to load your data there is file `data.py` has two function you should write your
 	
 
  1. train data loader
-	 ```
+	 ```py
 	def train_data_loader(path=None):
 	    X_train = None
 	    Y_train = None
@@ -50,7 +51,7 @@ to load your data there is file `data.py` has two function you should write your
 	    return X_train,Y_train,X_test,Y_test
 	 ```
 2. predict data loader
-	```
+	```py
 	def predict_data_loader(path=None):
 	    X = None
 	    
