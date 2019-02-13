@@ -1,10 +1,11 @@
 
+
 # Artificial Neural Network
 this project allow to make fully connected layers neural network in simple way with optimization and regularization 
 
 **Requirements**
-- python 3.*
-- Numpy
+- [Python](https://www.python.org/) 3.*
+- [Numpy](http://www.numpy.org/)
 
 
 **Options that project support :**
@@ -74,7 +75,7 @@ in train mode you have to define some parameters subset is required and the othe
 
 **Required parameters**
 -  layers	--  number of neurons in every layer 
-	``` 
+	```py 
 	Ex: --layers 3 5 3 1           
 			*	
 		*	*	*
